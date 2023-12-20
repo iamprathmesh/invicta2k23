@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Guess the Gibberish</title>
+  <link rel="stylesheet" href="css/gibberish.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Guess the Gibberish</h1>
+    <p id="timer" style="text-align: center;"></p>
+    <div class="score" id="sex">
+      <div>Score</div>
+      <div id="score">0</div>
+    </div>
+    <style>
+      #score {
+        font-weight: bold;
+        color: rgb(202, 93, 93);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #sex {
+        font-weight: bold;
+        color: rgb(202, 93, 93);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+    <div class="content">
+      <input type="text" class="typing-input" maxlength="1">
+      <div class="inputs"></div>
+      <div class="details">
+        <p class="hint">Hint: <span></span></p>
+        <p class="guess-left">Remaining guesses: <span></span></p>
+        <p class="wrong-letter">Wrong letters: <span></span></p>
+      </div>
+
+      <button class="reset-btn" id="gib-next">Next</button>
+    </div>
+  </div>
+
+  <script src="js/gibberish/words.js"></script>
+  <script src="js/gibberish/script.js"></script>
+
+</body>
+
+</html>

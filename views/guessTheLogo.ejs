@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trivia Logo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/guessTheLogo.css" />
+</head>
+
+<body onload="ready()">
+    <div class="all-items-center">
+        <center>
+            <div style="margin-top: 20px;">
+                <h1 class="header-title">Invicta Trivia Logo 2023</h1>
+                <hr style="border: 3px solid #ff9100; border-radius: 10px; width: 100px; margin-bottom: 20px;" />
+                <p id="timer"></p>
+
+                <br />
+
+                <div class="score">
+                    <div>Score</div>
+                    <div id="score">0</div>
+                </div>
+
+                <div class="slider">
+                    <div class="img-box">
+                        <img src="images/guessTheLogo/a.png" class="slider-img" id="image">
+                    </div>
+                </div>
+                <br>
+                <input type="text" class="answer" placeholder="Type Your Answer" />
+                <input type="button" class="submit-btn" id="logo-next" href="/" value="submit" />
+            </div>
+        </center>
+    </div>
+    <script src="js/guessTheLogo/main.js"></script>
+    <script src="js/guessTheLogo/qustion.js"></script>
+</body>
+
+</html>
